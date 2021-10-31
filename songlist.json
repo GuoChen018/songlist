@@ -9,54 +9,54 @@
         "genre": ["pop"],
         "title": "Story of My Life",
         "artist": "One Direction",
-        "year": 2013 
+        "year": "2013" 
     },
     {
         "genre": ["pop"],
         "title": "Girls Like You",
         "artist": "Maroon 5",
-        "year": 2017 
+        "year": "2017" 
     },
     {
         "genre": ["pop", "r&b"],
         "title": "Paris in the Rain",
         "artist": "Lauv",
-        "year": 2018 
+        "year": "2018" 
     },
     {
         "genre": ["rhythm", "r&b"],
         "title": "Chanel",
         "artist": "Frank Ocean",
-        "year": 2017
+        "year": "2017"
     },
     {
         "genre": ["indie", "house"],
         "title": "A Sky Full of Stars",
         "artist": "Coldplay",
-        "year": 2014 
+        "year": "2014" 
     },
     {
         "genre": ["indie", "pop rock"],
         "title": "Cool Kids",
         "artist": "Echosmith",
-        "year": 2013 
+        "year": "2013" 
     },
     {
         "genre": ["house", "electronic"],
         "title": "Summer",
         "artist": "Calvin Harris",
-        "year": 2014 
+        "year": "2014" 
     },
     {
         "genre": ["pop", "funk"],
         "title": "Classics",
         "artist": "MKTO",
-        "year": 2013
+        "year": "2013"
     },
     {
         "genre": ["pop", "dance pop"],
         "title": "I Gotta Feeling",
         "artist": "Black Eyed Peas",
-        "year": 2009
+        "year": "2009"
     }
 ]
