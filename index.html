@@ -80,11 +80,7 @@
                     if (song.genre[i] == document.getElementById("myGenre").value) {
 
                         //Print out the filtered list
-                        document.getElementById("list").innerHTML += "<div class=\"box\">" + "<span class=\"test\">" + song.title + "</span>" + "<br>" +
-                        "Artist: " + song.artist + "<br>" + 
-                        "Genre: " + song.genre + "<br>" + 
-                        "Released " + song.year + "<br><br><br>" + "</div>"
-
+                        document.getElementById("list").innerHTML += "<div class=\"box\">" + "<span class=\"test\">" + song.title + "</span>" + "<br>";
                     }
                 }
             });
