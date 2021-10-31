@@ -39,6 +39,7 @@
                     // console.log(returnHTML);
 					data = JSON.parse(theData);
 					
+                    //Display all the songs at the beginning before filter
                     data.forEach(function(song) { 
                         document.getElementById("list").innerHTML += "<div class=\"box\">" + "<span class=\"test\">" + song.title + "</span>" + "<br>" +
                         "Artist: " + song.artist + "<br>" + 
@@ -66,20 +67,19 @@
 			console.log("4 request sent");
 		}
 
-        //Filter function
+        //Filter based on dropdown selection
         function filterjson() {
-            var data_filter; 
 
+            //Clear out the list so can present a new filtered list
             document.getElementById("list").innerHTML =  ""; 
 
+            //Go through each song
             data.forEach(function(song) {
+                //Go through all the genres in a song to check for matching
                 for (let i=0; i<song.genre.length; i++) {
                     if (song.genre[i] == document.getElementById("myGenre").value) {
-                        // Testing console code below
-                        // console.log("I'm in!")
-                        // console.log("Looking at " + song.title + "'s " + song.genre[i])
-                        // console.log(song)
 
+                        //Print out the filtered list
                         document.getElementById("list").innerHTML += "<div class=\"box\">" + "<span class=\"test\">" + song.title + "</span>" + "<br>" +
                         "Artist: " + song.artist + "<br>" + 
                         "Genre: " + song.genre + "<br>" + 
@@ -88,9 +88,6 @@
                     }
                 }
             });
-
-            // Testing console code below
-            console.log(document.getElementById("myGenre").value)
         }
 
 	</script>
@@ -168,6 +165,7 @@
     
     <h2>JSON Song List</h2>
     
+    <!-- Dropdown list -->
     <section class="list">
         <div class="chooseFilter">
             <select id="myGenre">
@@ -184,13 +182,10 @@
     
             <input type = "button" value = "Filter" onclick="filterjson()"/>
         </div>
+
         <p id="display"></p>
         <p id="list"></p>
-        <!-- <p id="filteredList"></p> -->
 
-        <script language="javascript">
-            
-        </script>
     </section>
     
 </body>
